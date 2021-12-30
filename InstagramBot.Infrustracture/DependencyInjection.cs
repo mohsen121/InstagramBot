@@ -13,7 +13,7 @@ namespace InstagramBot.Infrustracture
     {
         public static IServiceCollection AddInfrustracture(this IServiceCollection services)
         {
-            services.AddSingleton<IInstagramService, InstagramService>();
+            services.AddSingleton<IInstagramService, InstagramPrivateApiService>();
             return services;
         }
     }

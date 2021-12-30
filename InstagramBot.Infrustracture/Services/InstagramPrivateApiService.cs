@@ -13,14 +13,14 @@ using Microsoft.Extensions.Options;
 
 namespace InstagramBot.Infrustracture.Services
 {
-    public class InstagramService : IInstagramService
+    public class InstagramPrivateApiService : IInstagramService
     {
         private readonly InstagramUserCredential instagramUserCredential1;
 private IInstaApi api;
 
         private const string _stateFileName = "state.txt";
 
-        public InstagramService(IOptionsSnapshot<InstagramUserCredential> instagramUserCredential)
+        public InstagramPrivateApiService(IOptionsSnapshot<InstagramUserCredential> instagramUserCredential)
         {
             this.instagramUserCredential1 = instagramUserCredential.Value; 
         }
