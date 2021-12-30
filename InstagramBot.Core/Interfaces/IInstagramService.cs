@@ -9,7 +9,6 @@ namespace InstagramBot.Core.Interfaces
 {
     public interface IInstagramService
     {
-        public Task Login();
         public Task<string> CreatePost(string caption, string[] images);
         public Task<IEnumerable<InstagramPostViewModel>> GetPosts();
     }
